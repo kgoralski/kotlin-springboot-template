@@ -25,7 +25,10 @@ For production it need a little bit more. :)
 #### Spring Data REST with H2 Database
 
 - Exposing Spring Data Repositories to the world
-- With all features like: pagingm sorting, even custom queries
+- With all features like: pagingm sorting, even custom queries like:
+```
+http://localhost:8080/authors/search/findByFirstName?name=Steven
+```
 - Create Entity, Repository and Endpoints will be created by Spring
 
 ```json
