@@ -9,12 +9,14 @@ buildscript {
     }
     dependencies {
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${kotlinVersion}")
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
     }
 }
 
 apply {
     plugin("kotlin")
     plugin("idea")
+    plugin("org.springframework.boot")
 }
 
 version = "0.0.1-SNAPSHOT"
@@ -37,5 +39,5 @@ dependencies {
 
     testCompile(project(":kotlinboot-server"))
     testCompile("org.spockframework:spock-spring:1.0-groovy-2.4")
-    testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
 }
