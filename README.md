@@ -26,7 +26,7 @@ For production it need a little bit more. :)
 - DELETE http://localhost:8080/rest/books/
 - GET http://localhost:8080/rest/books/find?title=Hobbit
 
-#### Spring Data REST with H2 Database
+#### Spring Data REST with H2 Database (JPA)
 
 - Exposing Spring Data Repositories to the world
 - With all features like: paging sorting, even custom queries like:
