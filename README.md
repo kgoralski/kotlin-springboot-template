@@ -12,6 +12,10 @@ For production it need a little bit more. :)
 - Tests with Spock
 - Gradle Kotlin Script with multi modules
 
+#### How to run it?
+- gradle clean bootRepackage
+- docker start cassandradb-2.1.16
+- java -jar kotlinboot-server-0.0.1-SNAPSHOT.jar 
 
 #### Endpoints JAX-RS for Apache Cassandra
 - GET http://localhost:8080/rest/books/
