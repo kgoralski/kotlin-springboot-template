@@ -32,10 +32,6 @@ repositories {
 	mavenCentral()
 }
 
-configure<ApplicationPluginConvention> {
-	mainClassName = "pl.goralski.Application"
-}
-
 val kotlinVersion = extra["kotlinVersion"] as String
 
 dependencies {
