@@ -74,7 +74,6 @@ docker run --name cassandradb-2.1.16 -p "7191:7191" -p "7000:7000" -p "7001:7001
 - Apache Cassandra 3.x.x will be probably supported for Spring Boot 1.5.0 RELEASE
 ```
 docker run --name cassandradb -p "7191:7191" -p "7000:7000" -p "7001:7001" -p "9160:9160" -p "9042:9042" -d cassandra:latest
-
 ```
 - Script
 ```sql
