@@ -1,11 +1,11 @@
 # Kotlin Spring Boot Application Scaffold 
-You are using it at your own risk. It is playground project. 
+You are using it at your own risk. It is playground project. Very quickie. 
 For production it need a little bit more. :)
 
 ## About:
 - Kotlin
 - Spring Boot
-- REST JAX-RS
+- REST JAX-RS and Jersey Proxy Client
 - Sprind Data JPA with H2 Database
 - Spring Data NoSQL with Apache Cassandra (from Docker for App, embedded for Tests)
 - Spring Data REST based on JPA
@@ -84,5 +84,9 @@ CREATE INDEX IF NOT EXISTS booktitleindex ON books(title);
 CREATE INDEX IF NOT EXISTS bookauthorindex ON books(author);
 ```
 
-
+#### Intellij IDEA
+- Gradle Kotlin Script :"This sample should work against the latest Kotlin plugin, 
+1.1-M02-12 at the time of this writing, from the Early Access Preview 1.1 channel accessible 
+via the Configure Kotlin Plugin Updates action." https://github.com/gradle/gradle-script-kotlin/tree/master/samples
+- Running Spock tests inside Eclipse might be difficult
 

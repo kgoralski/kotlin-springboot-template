@@ -1,0 +1,8 @@
+def configureGradleScriptKotlinOn(ProjectDescriptor project) {
+    project.buildFileName = 'build.gradle.kts'
+    project.children.each { configureGradleScriptKotlinOn(it) }
+}
+
+include 'kotlinboot-server', 'kotlinboot-client', 'kotlinboot-commons'
+
+configureGradleScriptKotlinOn rootProject
