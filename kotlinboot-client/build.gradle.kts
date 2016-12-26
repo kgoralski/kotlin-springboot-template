@@ -1,3 +1,5 @@
+import org.springframework.boot.gradle.repackage.RepackageTask
+
 buildscript {
     val springBootVersion = "1.4.2.RELEASE"
     extra["springBootVersion"] = springBootVersion
@@ -25,6 +27,11 @@ configure<JavaPluginConvention> {
     setSourceCompatibility(1.8)
     setTargetCompatibility(1.8)
 }
+
+(tasks.getByName("bootRepackage") as RepackageTask).apply {
+    enabled = false
+}
+
 
 val kotlinVersion = extra["kotlinVersion"] as String
 val springBootVersion = extra["springBootVersion"] as String
