@@ -8,7 +8,7 @@ For production it need a little bit more. :)
 - REST JAX-RS and Jersey Proxy Client
 - Sprind Data JPA with H2 Database
 - Spring Data NoSQL with Apache Cassandra (from Docker for App, embedded for Tests)
-- Spring Data REST based on JPA
+- Spring Data REST
 - Tests with Spock
 - Gradle Kotlin Script with multi modules
 
@@ -16,8 +16,8 @@ For production it need a little bit more. :)
 #### Endpoints JAX-RS for Apache Cassandra
 - GET http://localhost:8080/rest/books/
 - GET http://localhost:8080/rest/books/1
-- POST http://localhost:8080/rest/books/ { payload }
-- PUT http://localhost:8080/rest/books/1 { payload }
+- POST http://localhost:8080/rest/books/ { BookDto }
+- PUT http://localhost:8080/rest/books/1 { BookDto }
 - DELETE http://localhost:8080/rest/books/1
 - DELETE http://localhost:8080/rest/books/
 - GET http://localhost:8080/rest/books/find?title=Hobbit
@@ -25,7 +25,7 @@ For production it need a little bit more. :)
 #### Spring Data REST with H2 Database
 
 - Exposing Spring Data Repositories to the world
-- With all features like: pagingm sorting, even custom queries like:
+- With all features like: paging sorting, even custom queries like:
 ```
 http://localhost:8080/authors/search/findByFirstName?name=Steven
 ```
