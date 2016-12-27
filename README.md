@@ -91,7 +91,7 @@ http://localhost:8080/authors/search/findByFirstName?name=Steven
 
 #### Apache Cassandra and Docker
 
-- Apache Cassandra 2.x.x 
+- Apache Cassandra 2.x.x (Used for this project)
 ```
 docker run --name cassandradb-2.1.16 -p "7191:7191" -p "7000:7000" -p "7001:7001" -p "9160:9160" -p "9042:9042" -d cassandra:2.1.16
 ```
