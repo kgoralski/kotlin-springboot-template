@@ -106,6 +106,8 @@ CREATE TABLE IF NOT EXISTS books (id TimeUUID PRIMARY KEY, title text, author te
 CREATE INDEX IF NOT EXISTS booktitleindex ON books(title);
 CREATE INDEX IF NOT EXISTS bookauthorindex ON books(author);
 ```
+You can connect to Cassandra inside docker with http://dbeaver.jkiss.org/download/enterprise/ 
+Using cassandra/cassandra login/pass to localhost:9042
 
 #### Intellij IDEA
 - Gradle Kotlin Script :"This sample should work against the latest Kotlin plugin, 
@@ -113,3 +115,7 @@ CREATE INDEX IF NOT EXISTS bookauthorindex ON books(author);
 via the Configure Kotlin Plugin Updates action." https://github.com/gradle/gradle-script-kotlin/tree/master/samples
 - Running Spock tests inside Eclipse might be difficult
 
+#### References 
+- https://github.com/sdeleuze/spring-boot-kotlin-demo
+- https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-data-cassandra
+- http://stackoverflow.com/questions/36975997/cassandra-3-5-compatablity-with-spring-data-1-4
