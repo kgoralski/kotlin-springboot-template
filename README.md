@@ -6,6 +6,7 @@ For production it need a little bit more. :)
 - Kotlin
 - Spring Boot
 - REST JAX-RS and Jersey Proxy Client
+- HATEOAS Example
 - Sprind Data JPA with H2 Database
 - Spring Data NoSQL with Apache Cassandra (from Docker for App, embedded for Tests)
 - Spring Data REST
@@ -69,6 +70,22 @@ http://localhost:8080/authors/search/findByFirstName?name=Steven
     "totalPages" : 1,
     "number" : 0
   }
+}
+```
+#### HATEOAS Example
+```json
+{
+	"id": "56a915f0-cb9b-11e6-8d84-59dd97b77ed0",
+	"title": "title",
+	"author": "author",
+	"cover": "cover",
+	"fullName": "author title",
+	"links": [
+		{
+			"rel": "self",
+			"href": "http://localhost:8080/rest/books/hateoas/56a915f0-cb9b-11e6-8d84-59dd97b77ed0"
+		}
+	]
 }
 ```
 

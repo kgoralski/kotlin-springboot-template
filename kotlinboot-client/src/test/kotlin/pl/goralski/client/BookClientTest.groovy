@@ -14,6 +14,7 @@ import spock.lang.Specification
 @ComponentScan
 @ContextConfiguration
 class BookClientTest extends Specification {
+    // For now these tests needs Cassandra Db up
 
     @LocalServerPort
     int port;

@@ -1,7 +1,7 @@
-package pl.goralski.web
+package pl.goralski.services
 
 import com.datastax.driver.core.utils.UUIDs
-import org.springframework.stereotype.Component
+import org.springframework.stereotype.Service
 import pl.goralski.converters.BookConverter
 import pl.goralski.dao.Book
 import pl.goralski.dao.BookRepository
@@ -9,7 +9,7 @@ import pl.goralski.web.model.BookDto
 import java.util.*
 import javax.inject.Inject
 
-@Component
+@Service
 class BookService @Inject constructor(val repository: BookRepository, val converter: BookConverter) {
 
     fun getBooks(): Collection<BookDto> {

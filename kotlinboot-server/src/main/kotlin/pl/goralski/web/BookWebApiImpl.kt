@@ -1,5 +1,6 @@
 package pl.goralski.web
 
+import pl.goralski.services.BookService
 import pl.goralski.web.api.BookWebApi
 import pl.goralski.web.model.BookDto
 import java.util.*
@@ -7,6 +8,7 @@ import javax.inject.Inject
 import javax.ws.rs.core.Response
 
 open class BookWebApiImpl @Inject constructor(val service: BookService) : BookWebApi {
+    // This class needs tests too and better error handling :)
 
     override fun getBooks(): Response {
         return Response.ok(service.getBooks()).build()
