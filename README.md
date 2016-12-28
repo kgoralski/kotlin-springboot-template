@@ -112,6 +112,9 @@ buildscript {
 		maven{setUrl(springSnapshot)}
 		maven{setUrl(springMilestone)}
 	}
+dependencies {	
+	testCompile("org.cassandraunit:cassandra-unit-spring:3.1.1.0")
+	}	
 }
 ```
 - Script
