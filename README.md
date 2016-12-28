@@ -95,9 +95,23 @@ http://localhost:8080/authors/search/findByFirstName?name=Steven
 ```
 docker run --name cassandradb-2.1.16 -p "7191:7191" -p "7000:7000" -p "7001:7001" -p "9160:9160" -p "9042:9042" -d cassandra:2.1.16
 ```
-- Apache Cassandra 3.x.x will be probably supported for Spring Boot 1.5.0 RELEASE
+- Apache Cassandra 3.x.x works with Spring Boot 2.0.0 RELEASE
 ```
 docker run --name cassandradb -p "7191:7191" -p "7000:7000" -p "7001:7001" -p "9160:9160" -p "9042:9042" -d cassandra:latest
+```
+You may need to add this to build.gradle.kts
+```kotlin
+buildscript {
+	var springSnapshot: String by extra
+	springSnapshot = "https://repo.spring.io/snapshot"
+	var springMilestone: String by extra
+	springMilestone = "https://repo.spring.io/milestone"
+
+	repositories {
+		maven{setUrl(springSnapshot)}
+		maven{setUrl(springMilestone)}
+	}
+}
 ```
 - Script
 ```sql
