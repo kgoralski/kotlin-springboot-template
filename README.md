@@ -99,7 +99,7 @@ docker run --name cassandradb-2.1.16 -p "7191:7191" -p "7000:7000" -p "7001:7001
 ```
 docker run --name cassandradb -p "7191:7191" -p "7000:7000" -p "7001:7001" -p "9160:9160" -p "9042:9042" -d cassandra:latest
 ```
-You may need to add this to build.gradle.kts
+You may need to add this to build.gradle.kts for Apache Cassandra 3.x.x
 ```kotlin
 buildscript {
     val springBootVersion = "2.0.0.BUILD-SNAPSHOT"
