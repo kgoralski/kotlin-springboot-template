@@ -102,6 +102,7 @@ docker run --name cassandradb -p "7191:7191" -p "7000:7000" -p "7001:7001" -p "9
 You may need to add this to build.gradle.kts
 ```kotlin
 buildscript {
+    val springBootVersion = "2.0.0.BUILD-SNAPSHOT"
 	var springSnapshot: String by extra
 	springSnapshot = "https://repo.spring.io/snapshot"
 	var springMilestone: String by extra
