@@ -140,3 +140,4 @@ via the Configure Kotlin Plugin Updates action." https://github.com/gradle/gradl
 - https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-data-cassandra
 - http://stackoverflow.com/questions/36975997/cassandra-3-5-compatablity-with-spring-data-1-4
 - https://www.javacodegeeks.com/2015/01/building-a-hateoas-api-with-jax-rs-and-spring.html
+- [Introducing Kotlin support in Spring Framework 5.0!](https://spring.io/blog/2017/01/04/introducing-kotlin-support-in-spring-framework-5-0)
