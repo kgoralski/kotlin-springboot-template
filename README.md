@@ -89,7 +89,7 @@ http://localhost:8080/authors/search/findByFirstName?name=Steven
 }
 ```
 
-#### Apache Cassandra and Docker
+#### Apache Cassandra and Docker (for easy setup)
 
 - Apache Cassandra 2.x.x (Used for this project)
 ```
@@ -126,6 +126,8 @@ CREATE INDEX IF NOT EXISTS bookauthorindex ON booksdb.books(author);
 ```
 You can connect to Cassandra inside docker with http://dbeaver.jkiss.org/download/enterprise/ 
 Using cassandra/cassandra login/pass to localhost:9042
+
+- Database inside Docker? [Be warned.](http://patrobinson.github.io/2016/11/07/thou-shalt-not-run-a-database-inside-a-container/)
 
 #### Intellij IDEA
 - Gradle Kotlin Script :"This sample should work against the latest Kotlin plugin, 
